@@ -29,4 +29,17 @@ The type of the returned value will be `Any`.
 
 Block expressions
 -----------------
+Blocks are defined within a pair of brackets `{}`. Block is a sequence of expressions and the result is also an expression. The value of the block is the value of the last expression. 
 
+```scala
+val res = { val x = 1; val y = 2; x + y }
+```
+
+There's one thing a Scala programmer must be aware of *assignments return no value*, or strictly speaking they have a value of type `Unit` (aka void in C, C++, Java). A block that ends with an assignment will return a `Unit` value.
+
+```scala
+{ val x = 1 + 2; x -= 1 }
+```
+
+Input and output
+----------------
