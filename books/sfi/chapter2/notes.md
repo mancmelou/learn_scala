@@ -150,3 +150,38 @@ println(pretify(left = "*** ", right = " :::", text = "Hello world!!"))
 
 Variable arguments
 ------------------
+
+```scala 
+def sum(args: Int*) = {
+  var result = 0
+  for (arg <- args) result += arg
+  
+  result
+}
+
+sum(1,2) + sum(1,2,3,4)
+
+// Ruby's splat operator equivalent is `_*`.
+sum(1 to 5: _*)
+```
+
+Procedures
+----------
+Functions that do not return values. To define a procedure use the `def` keyword without the preceeding `=` symbol. Return type of functions defined in this way is always `Unit`.
+
+```scala
+def greeting(msg: String) { // NO "=" SYMBOL AFTER THE PARAM LIST
+  println(">>> " + msg + " <<<")
+}
+```
+
+Lazy values
+-----------
+When a val is defined as lazy, it's initialization is deferred until is accessed for the first time. Use lazy values to delay costly initializations like setting up a http connection, reading large files etc.
+
+```scala 
+lazy val words = scala.io.Source.fromFile("/var/retsci/features/users.tsv").mkString
+```
+
+Exceptions
+----------
