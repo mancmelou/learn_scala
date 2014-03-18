@@ -125,3 +125,28 @@ for (c <- "Hello"; i <- 0 to 1) yield (c + i).toChar
 
 Functions 
 ---------
+Simple function definition.
+
+```scala
+def abs(n: Int) = if (x >= 0) x else -x
+
+// function return type is a must if the function is recursive
+def fact(n: Int): Int = if (n <= 0) 1 else n * fact(n - 1)
+```
+
+Default and named arguments
+---------------------------
+Like in other languages you can provide default arguments in the function definition.
+
+```scala
+def pretify(text: String, left: String = "[[[[ ", right: String = " ]]]]") = left + text + right
+
+// use default parameters
+println(pretify("Retention Science"))
+
+// use named params in any order
+println(pretify(left = "*** ", right = " :::", text = "Hello world!!"))
+```
+
+Variable arguments
+------------------
