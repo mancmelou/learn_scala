@@ -29,4 +29,71 @@ The type of the returned value will be `Any`.
 
 Block expressions
 -----------------
+Blocks are defined within a pair of brackets `{}`. Block is a sequence of expressions and the result is also an expression. The value of the block is the value of the last expression. 
 
+```scala
+val res = { val x = 1; val y = 2; x + y }
+```
+
+There's one thing a Scala programmer must be aware of *assignments return no value*, or strictly speaking they have a value of type `Unit` (aka void in C, C++, Java). A block that ends with an assignment will return a `Unit` value.
+
+```scala
+{ val x = 1 + 2; x -= 1 }
+```
+
+Input and output
+----------------
+To print a value to std use `print` or `println`. There's also C style `printf` function for formated output. 
+
+```scala
+print("Hello world!\n")
+
+println("Hello again!")
+```
+
+You can read line by using the `readLine` or you can use `readInt`, `readBoolean`, `readDouble` and so on.
+
+```scala
+val name = readLine("Your name: ")
+
+print("Your age: ")
+val age = readInt()
+
+printf("Hello %s, next year you'll be %d.\n", name, age + 1)
+```
+
+Loops
+-----
+Scala has the same `while` and `do` loops like in other languages.
+
+```scala
+while (n > 0) {
+  r  = r * n
+  n -= 1
+}
+```
+
+There's no direct analog for the `for` loop. Instead you can use `while` or write `for` like this:
+
+```scala
+for (i <- 1 to n) {
+  r = r * i
+}
+```
+
+For traversing a string or and array where we usually start from 0 to n then istead of `to` construct we can use `until`.
+
+```scala
+val   s = "Hello"
+var sum = 0
+
+for (i <- 0 until s.length) s += sum(i)
+```
+
+Scala has no `break` and `continue` statements that can help controlling a loop execution. Instead of that we can:
+- use Boolean control variables 
+- use nested funcitons and return from the middle of a funciton 
+- use the `break` method from the `Breaks` object
+
+Advanced for loops 
+------------------
