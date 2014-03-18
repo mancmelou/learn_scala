@@ -95,5 +95,33 @@ Scala has no `break` and `continue` statements that can help controlling a loop 
 - use nested funcitons and return from the middle of a funciton 
 - use the `break` method from the `Breaks` object
 
-Advanced for loops 
-------------------
+Advanced `for` loops 
+--------------------
+Multiple generators are allowed as long as we separate them with a `;`.
+
+```scala
+for (i <- 1 to 3; j <- 1 to 3) print(j * i)
+```
+
+Each generator can have a "guard".
+
+```scala
+for (i <- 1 to 3; j <- 1 to 3; if i != j) print(j + i)
+```
+
+Also definitions are allowed too for introducing vars inside the loops.
+
+```scala
+for (i <- 1 to 3; from = 4 - i; j <- from to 3) print(i + j)
+```
+
+Using yield inside loops will return a collection
+
+```scala
+for (i <- 0 to 10) yield i * 10
+
+for (c <- "Hello"; i <- 0 to 1) yield (c + i).toChar
+```
+
+Functions 
+---------
