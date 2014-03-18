@@ -185,3 +185,28 @@ lazy val words = scala.io.Source.fromFile("/var/retsci/features/users.tsv").mkSt
 
 Exceptions
 ----------
+Throwing exceptions works like in other languages. An object can be thrown as long as it inherits `java.lang.Throwable`. 
+
+A throw expression has the special type `Nothing` which is useful in `if/else` expressions when the both branches have to return either the same type of one of the supertypes. In case one of the branches has `Nothing` the return type of `if/else` expression will be the type of the other branch. 
+
+```scala 
+if (x >= 0) sqrt(x) else throw new IllegalArgumentException("x cannot be negative")
+```
+
+Catching exceptions follows the matching pattern principles.
+
+```scala
+val url = new URL("http://google.com")
+
+try {
+  process(url)
+} catch {
+  // you can use `_` for the variable name if you don't need it
+  case _: MailformedURLEception => println("Bad URL: " + url)
+  
+  // or you can use variable name when you need to reference it
+  case ex: IOException => ex.printStackTrace()
+}
+```
+
+The full syntax for handling exceptions is `try {} catch {} finally {}`
