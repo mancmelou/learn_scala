@@ -209,4 +209,4 @@ try {
 }
 ```
 
-The full syntax for handling exceptions is `try {} catch {} finally {}`
+The full syntax for handling exceptions is `try {} catch {} finally {}`.
