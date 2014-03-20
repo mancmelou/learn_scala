@@ -77,3 +77,4 @@ Arithmetic and operator overloading
 Arithmetic operators in Scala work just like in any other languages. The thing that differ in Scala is that all of the operators are actually methods. 
 
 For example, the `a + b` expression is a shorthand for  `a.+(b)` where the `+` sign is method inside `a`'s class.
+
