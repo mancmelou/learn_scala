@@ -78,3 +78,6 @@ Arithmetic operators in Scala work just like in any other languages. The thing t
 
 For example, the `a + b` expression is a shorthand for  `a.+(b)` where the `+` sign is method inside `a`'s class.
 
+Next
+----
+(Chater 2 notes](../chapter2/notes.md)
