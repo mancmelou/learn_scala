@@ -56,3 +56,24 @@ greeting: String = Hello!
 scala> val Pi: Double = 31415e-4
 Pi: Double = 3.1415
 ```
+
+Commonly used types 
+-------------------
+All types in Scala are classes. There's no distinction between primitive types and class types in Scala. Just like in Ruby for example, you can invoke methods on primitive types.
+
+```bash
+scala> 1.toString
+res3: String = 1
+
+scala> 1.toDouble
+res4: Double = 1.0
+
+scala> 1.to(10)
+res5: scala.collection.immutable.Range.Inclusive = Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+```
+
+Arithmetic and operator overloading
+-----------------------------------
+Arithmetic operators in Scala work just like in any other languages. The thing that differ in Scala is that all of the operators are actually methods. 
+
+For example, the `a + b` expression is a shorthand for  `a.+(b)` where the `+` sign is method inside `a`'s class.
