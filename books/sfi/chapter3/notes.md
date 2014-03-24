@@ -1,5 +1,5 @@
-Chapter 3: Working with arrays
-==============================
+Chapter 3: Arrays
+=================
 
 Some key points:
 - Use an `Array` if the length is fixed. Use an `ArrayBuffer` if the length can vary.
