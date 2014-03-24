@@ -1,5 +1,5 @@
-Chapter 2
-=========
+Chapter 2: Control structures and functions
+===========================================
 
 In Scala almost all constructs have a value vs other programming languages where
 we differentiate expressions (`1 + 2` returns `3`) and statements (`if`, `print`).
