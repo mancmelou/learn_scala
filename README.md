@@ -1,4 +1,10 @@
-learn_scala
-===========
+Scala for the impatient
+=======================
+Reading notes
 
-Learning Scala in small bites
+The book
+--------
+
+Contents
+--------
+
