@@ -25,3 +25,15 @@ val cities = Array("Belgrade", "Los Angeles", "Paris", "New York")
 // accessing elements using () instead of [] like in other languages
 println(cities(1))
 ```
+
+Variable length arrays
+----------------------
+
+Multidimensional arrays
+-----------------------
+
+Traversing
+----------
+
+Transforming
+------------
