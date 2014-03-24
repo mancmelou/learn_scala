@@ -1,5 +1,5 @@
-Chapter 1
-=========
+Chapter 1: The basics
+=====================
 After installing scala, the scala interpreter will be available in your command shell. 
 
 ```bash
