@@ -213,4 +213,4 @@ The full syntax for handling exceptions is `try {} catch {} finally {}`.
 
 Next
 ----
-[Chapter 3: Arrays](https://github.com/mancmelou/learn_scala/blob/master/books/sfi/chapter3/notes.md)
+[Chapter 3: Arrays](https://github.com/mancmelou/learn_scala/blob/master/notes/chapter3.md)
