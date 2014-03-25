@@ -6,7 +6,8 @@ Reading notes from the book <a href="http://www.amazon.com/gp/product/0321774094
 
 Contents
 --------
-
 [Chapter 1: The basics](https://github.com/mancmelou/learn_scala/blob/master/notes/chapter1.md)
+
 [Chapter 2: Control structures and functions](https://github.com/mancmelou/learn_scala/blob/master/notes/chapter2.md)
+
 [Chapter 3: Arrays](https://github.com/mancmelou/learn_scala/blob/master/notes/chapter3.md)
