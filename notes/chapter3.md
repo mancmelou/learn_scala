@@ -50,6 +50,31 @@ for (i <- 0 until matrix2.length) {
 
 Traversing
 ----------
+Traversing using the `for` loop. 
+
+```scala
+val a = Array(1, 2, 3)
+
+// traverse the elements 
+for (i <- 0 until a.length) { //NOTE: until goes till a.length - 1
+  println(a(i))
+}
+
+// traverse every second element
+for (i <- 0 until (a.length, 2)) println(a(i))
+
+// traverse in reverse order
+for (i <- (0 until a.lenght).reverse) println(a(i))
+```
+
+If you don't need the index or don't know the actuall size of the collection, you can access the elements directly using the `for` loop. 
+
+```scala 
+val numbers = Array(1, 1, 3, 4, 2)
+
+// access elements directly 
+for (element <- numbers) println(element)
+```
 
 Transforming
 ------------
