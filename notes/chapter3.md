@@ -78,3 +78,28 @@ for (element <- numbers) println(element)
 
 Transforming
 ------------
+Array transformations can be achieved with the `yield` keyword. The idea is when transforming an array we don't want to modify the existing array but yield a new one. 
+
+```scala
+val collection = Array(1, 2, 3, 9, 8, 7)
+
+// transform the elements so each of them is multiplied by 10
+for (elem <- collection) yield elem * 10
+
+// Array[Int] = Array(10, 20, 30, 90, 80, 70)
+```
+
+Sometimes when traversing the collection we want to add some restrictions to the elements we are traversing through.
+
+```scala
+val nums = Array(1,2,3,4)
+
+// take only even numbers and multiply them by 100
+for (n <- nums if n % 2 == 0) yield n * 100
+
+//Array[Int] = Array(200, 400)
+```
+
+Next
+----
+Chapter 4: Maps and Tuples
