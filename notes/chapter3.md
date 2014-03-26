@@ -28,9 +28,25 @@ println(cities(1))
 
 Variable length arrays
 ----------------------
+```scala
+import scala.collection.mutable.ArrayBuffer
+
+// Empty array buffer
+val buffer = ArrayBuffer[Int]()
+```
 
 Multidimensional arrays
 -----------------------
+```scala
+// 3 x 4 matrix of Doubles
+val matrix = Array.ofDim[Double](3, 4)
+
+// 10 x 10 matrix of Ints
+val matrix2 = new Array[Array[Int]](10)
+for (i <- 0 until matrix2.length) {
+  matrix(i) = new Array[Int](10)
+}
+```
 
 Traversing
 ----------
