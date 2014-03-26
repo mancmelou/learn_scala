@@ -11,3 +11,5 @@ Contents
 [Chapter 2: Control structures and functions](https://github.com/mancmelou/learn_scala/blob/master/notes/chapter2.md)
 
 [Chapter 3: Arrays](https://github.com/mancmelou/learn_scala/blob/master/notes/chapter3.md)
+
+[Chapter 4: Maps and Tuples](https://github.com/mancmelou/learn_scala/blob/master/notes/chapter4.md)
