@@ -92,7 +92,7 @@ for (elem <- collection) yield elem * 10
 Sometimes when traversing the collection we want to add some restrictions to the elements we are traversing through.
 
 ```scala
-val nums = Array(1,2,3,4)
+val nums = Array(1, 2, 3, 4)
 
 // take only even numbers and multiply them by 100
 for (n <- nums if n % 2 == 0) yield n * 100
