@@ -55,3 +55,22 @@ for (key <- location.keys) println(key)
 // to switch keys and values
 for ((key, value) <- location) yield (value, key)
 ```
+
+Tuples
+------
+A tuple is a value formed by enclosing multiple individual values under one object. 
+
+```scala
+val math_constant = (1, 3.14, "Pi")
+
+// Tuple3[Int, Double, String]
+
+val (_, value, name) = math_constant
+println(name + " = " + value)
+```
+
+Accessing tuple elements can be done with the methods `_1`, `_2` and `_3`. Note that the position of the elements of tuple don't start with 0 like with Array - with tuples, it starts from 1. 
+
+Next
+----
+[Chapter 5: Classes](https://github.com/mancmelou/learn_scala/edit/master/notes/chapter5.md)
