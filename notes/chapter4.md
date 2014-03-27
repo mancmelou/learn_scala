@@ -73,4 +73,4 @@ Accessing tuple elements can be done with the methods `_1`, `_2` and `_3`. Note 
 
 Next
 ----
-[Chapter 5: Classes](https://github.com/mancmelou/learn_scala/edit/master/notes/chapter5.md)
+[Chapter 5: Classes](chapter5.md)
