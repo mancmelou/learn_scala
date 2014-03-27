@@ -80,4 +80,4 @@ For example, the `a + b` expression is a shorthand for  `a.+(b)` where the `+` s
 
 Next
 ----
-[Chater 2: Control structures and functions](https://github.com/mancmelou/learn_scala/blob/master/notes/chapter2.md)
+[Chater 2: Control structures and functions](chapter2.md)
