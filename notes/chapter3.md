@@ -102,4 +102,4 @@ for (n <- nums if n % 2 == 0) yield n * 100
 
 Next
 ----
-[Chapter 4: Maps and Tuples](https://github.com/mancmelou/learn_scala/blob/master/notes/chapter4.md)
+[Chapter 4: Maps and Tuples](chapter4.md)
