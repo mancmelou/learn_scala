@@ -19,3 +19,22 @@ class Abcd {
   }
 }
 ```
+
+Properties with setters and getters 
+-----------------------------------
+```scala
+class Person {
+  private var privAge = 0;
+  
+  // getter
+  def age = privAge
+  
+  // setter
+  def age_=(newValue: Int) {
+    if (newValue > privAge) privAge = newValue
+  }
+}
+```
+
+Properties with getters only
+----------------------------
