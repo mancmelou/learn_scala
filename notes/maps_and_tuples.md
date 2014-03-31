@@ -1,5 +1,5 @@
-Chapter 4: Maps and Tuples
-==========================
+Maps and Tuples
+===============
 
 Maps
 ----
@@ -73,4 +73,4 @@ Accessing tuple elements can be done with the methods `_1`, `_2` and `_3`. Note 
 
 Next
 ----
-[Chapter 5: Classes](chapter5.md)
+[Classes](classes.md)
