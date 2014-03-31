@@ -124,3 +124,7 @@ To make the primary constructor private use the `private` keyword after the clas
 ```scala
 class Car private (make: String, year: Int)
 ```
+
+Next
+----
+[Chapter 6: Objects](chapter6.md)
