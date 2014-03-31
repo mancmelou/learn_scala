@@ -1,5 +1,5 @@
-Chapter 3: Arrays
-=================
+Arrays
+======
 
 Some key points:
 - Use an `Array` if the length is fixed. Use an `ArrayBuffer` if the length can vary.
@@ -102,4 +102,4 @@ for (n <- nums if n % 2 == 0) yield n * 100
 
 Next
 ----
-[Chapter 4: Maps and Tuples](chapter4.md)
+[Maps and Tuples](maps_and_tuples.md)
