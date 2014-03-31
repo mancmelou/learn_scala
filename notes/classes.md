@@ -1,5 +1,5 @@
-Chapter 5: Classes
-==================
+Classes
+=======
 Fields in classes automatically come with setters and getters. All fields withing a class are public by default.
 
 Simple classes 
@@ -127,4 +127,4 @@ class Car private (make: String, year: Int)
 
 Next
 ----
-[Chapter 6: Objects](chapter6.md)
+[Objects](objects.md)
