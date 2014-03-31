@@ -96,9 +96,31 @@ class Car (m: String, y: Int) {
 
 Auxilary constructors
 ---------------------
+In addition to primary constructor, classes can have none or more auxilary constructors. The auxilary constructor is Scala is called `this` and each of them must start with either a call to a previously declared auxilary constructor or the primary constructor.
 
+```scala 
+class Car {
+  private var make = ""
+  private var year = 0
+  
+  def this (make: String) { // an auxilary constructor
+    this() // calls primary constructor
+    this.make = make
+  }
+  
+  def this (make: String, year: Int) { // another auxilary constructor
+    this(make) // calls the previous aux constructor
+    this.year = year
+  }
+}
 
-To make the primary constructor private use the `private` keyword after the class name, right before the parameter list: 
+val honda1 = new Car // calls the primary constructor 
+val honda2 = new Car("Honda") // calls the first aux constructor 
+val honda3 = new Car("Honda", 2014) // calls the second aux constructor
+```
+
+To make the primary constructor private use the `private` keyword after the class name, right before the parameter list. This will enforce using auxilary constructor over the primary one when its needed.
+
 ```scala
 class Car private (make: String, year: Int)
 ```
