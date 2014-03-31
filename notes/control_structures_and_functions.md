@@ -1,5 +1,5 @@
-Chapter 2: Control structures and functions
-===========================================
+Control structures and functions
+================================
 
 In Scala almost all constructs have a value vs other programming languages where
 we differentiate expressions (`1 + 2` returns `3`) and statements (`if`, `print`).
@@ -213,4 +213,4 @@ The full syntax for handling exceptions is `try {} catch {} finally {}`.
 
 Next
 ----
-[Chapter 3: Arrays](chapter3.md)
+[Arrays](arrays.md)
