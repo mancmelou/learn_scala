@@ -86,8 +86,19 @@ honda.year
 
 Construction parameters can be regular method parameters, without `val` or `var`. We can use them inside the class body to build other fields using the parameters. If any of the parameters gets used in a method, that parameter automatically becomes a field, otherwise - the parameter won't be saved as a field.
 ```scala 
-class Car (make: String, year: Int) {
-  def m = make
-  def y = year
+class Car (m: String, y: Int) {
+  println("Building " + m + " " + y)
+  
+  def make = m
+  def year = y
 }
+```
+
+Auxilary constructors
+---------------------
+
+
+To make the primary constructor private use the `private` keyword after the class name, right before the parameter list: 
+```scala
+class Car private (make: String, year: Int)
 ```
