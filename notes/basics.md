@@ -1,5 +1,5 @@
-Chapter 1: The basics
-=====================
+The basics
+==========
 After installing scala, the scala interpreter will be available in your command shell. 
 
 ```bash
@@ -80,4 +80,4 @@ For example, the `a + b` expression is a shorthand for  `a.+(b)` where the `+` s
 
 Next
 ----
-[Chater 2: Control structures and functions](chapter2.md)
+[Control structures and functions](control_structures_and_functions.md)
