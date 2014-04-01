@@ -57,3 +57,24 @@ object Vehicle extends SteeringWheel {
 
 The `apply` method
 ------------------
+Objects usually have implemented their `apply` method. The `apply` method is oftenly called for expressions of the form `Object(arg1, arg2, ... argN)`. We will see later this form is very handy, especially when working with nested expressions such as `Array(Array(1, 2), Array(3, 4))`.
+
+```scala
+// let's have a class
+class BarCode(country: String, productId: Int) {
+  def code: String = country + "-" + productId.toString
+}
+
+// companion object with the `apply` method
+object BarCode {
+  def apply(country: String, productId: Int): BarCode = new BarCode(country, productId)
+}
+
+val b = BarCode("US", 998123445)
+b.code
+// String = US-998123445
+```
+
+Next
+----
+[Inheritance](inheritance.md)
