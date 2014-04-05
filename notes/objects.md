@@ -90,7 +90,7 @@ object Apple {
 }
 
 // using just the class 
-val smallApple = new Field("Green", 1)
+val smallApple = new Apple("Green", 1)
 
 // using just the companion object
 val bigApple = Apple("Red", 10)
