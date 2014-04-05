@@ -39,6 +39,7 @@ object ID {
 
 The companion object must be in the same source file as the class if we want them to have access of their private variables.
 
+
 Object extending a class or trait
 ---------------------------------
 An object can extend another class and/or multiple traits. The result is an object of a class that extends the given class and/or the given traits.
@@ -73,6 +74,34 @@ object BarCode {
 val b = BarCode("US", 998123445)
 b.code
 // String = US-998123445
+```
+
+Another example
+
+```scala
+class Apple(val color: String, val weight: Int)
+
+object Apple {
+  def apply(color: String, weight: Int) = {
+    // so `apply` will basically return a new instace of 
+    // the class this object is companion with
+    new Apple(color, weight)
+  }
+}
+
+// using just the class 
+val smallApple = new Field("Green", 1)
+
+// using just the companion object
+val bigApple = Apple("Red", 10)
+
+// if you are trying to create an array of `Apple` objects
+// having the `apply` method
+val basketOfApples = Array(
+  Apple("Red", 1), 
+  Apple("Green", 3), 
+  Apple("Yellow", 2)
+)
 ```
 
 Next
