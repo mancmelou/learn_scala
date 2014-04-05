@@ -92,7 +92,7 @@ object Apple {
 // using just the class 
 val smallApple = new Apple("Green", 1)
 
-// using just the companion object
+// using the companion object's `apply` method
 val bigApple = Apple("Red", 10)
 
 // if you are trying to create an array of `Apple` objects
